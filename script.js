@@ -234,4 +234,4 @@ TPB.teams.forEach(team => {
 
     };
 
-});
+};
