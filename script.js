@@ -277,3 +277,5 @@ TPB.teams.forEach(team => {
     };
 
 };
+
+alert("TPB JavaScript OK");
