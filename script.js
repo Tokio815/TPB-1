@@ -194,9 +194,51 @@ managerPlayer: "佐内葵"
 
 console.log(TPB);
 
+document.addEventListener("DOMContentLoaded", () => {
+
 const teamArea = document.getElementById("teamArea");
 
 const playerArea = document.getElementById("playerArea");
+
+TPB.teams.forEach(team => {
+
+    const teamButton = document.createElement("button");
+
+    teamButton.textContent = team.name;
+
+    teamArea.appendChild(teamButton);
+
+    teamButton.onclick = () => {
+
+        playerArea.innerHTML = "";
+
+        const title = document.createElement("h3");
+
+        title.textContent = team.name + " 選手一覧";
+
+        playerArea.appendChild(title);
+
+        team.players.forEach(player => {
+
+            const p = document.createElement("p");
+
+            p.textContent =
+
+                "背番号 " + player.number +
+
+                "　" +
+
+                player.name;
+
+            playerArea.appendChild(p);
+
+        });
+
+    };
+
+});
+
+});
 
 TPB.teams.forEach(team => {
 
