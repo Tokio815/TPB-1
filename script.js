@@ -171,6 +171,7 @@ managerPlayer: "森本成名"
                 }
 
             ],
+            
             pitchers: [
 
     {
