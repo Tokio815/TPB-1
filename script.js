@@ -1,3 +1,5 @@
+alert("script OK");
+
 const TPB = {
 
     season: "2026年度 第1シーズン",
