@@ -279,3 +279,5 @@ TPB.teams.forEach(team => {
 };
 
 alert("TPB JavaScript OK");
+
+document.body.insertAdjacentHTML("beforeend","<h2>TPB TEST</h2>");
